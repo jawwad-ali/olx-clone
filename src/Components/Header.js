@@ -77,6 +77,7 @@ const HeaderLeft = styled.div`
     min-width: 2vw;
     outline: 0;
     color: black;
+    font-family: "Roboto", sans-serif;
     ::placeholder {
       font-family: "Roboto", sans-serif;
       font-size: 16px;
@@ -110,6 +111,7 @@ const HeaderCenter = styled.div`
     min-width: 50vw;
     outline: 0;
     color: black;
+    font-family: "Roboto", sans-serif;
 
     ::placeholder {
       font-family: "Roboto", sans-serif;

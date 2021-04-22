@@ -8,39 +8,38 @@ function Categories() {
       <CategoriesContainer>
         <ul>
           <li>
-            <a href=""> All Categories</a>
+            <a href="#"> All Categories</a>
           </li>
-
           <li>
             <ExpandMoreIcon />
           </li>
 
           <li>
-            <a href="">Mobile Phones</a>
+            <a href="#">Mobile Phones</a>
           </li>
 
           <li>
-            <a href="">Cars</a>
+            <a href="#">Cars</a>
           </li>
 
           <li>
-            <a href="">Motorcycles</a>
+            <a href="#">Motorcycles</a>
           </li>
 
           <li>
-            <a href="">Houses</a>
+            <a href="#">Houses</a>
           </li>
 
           <li>
-            <a href="">Tv-Video-Audio</a>
+            <a href="#">Tv-Video-Audio</a>
           </li>
 
           <li>
-            <a href="">Tablets</a>
+            <a href="#">Tablets</a>
           </li>
 
           <li>
-            <a href="">Land & Plots</a>
+            <a href="#">Land & Plots</a>
           </li>
         </ul>
       </CategoriesContainer>
@@ -68,7 +67,7 @@ const CategoriesContainer = styled.div`
     margin-left: 8px;
     font-size: 15px;
     color: #002f34;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
   }
 
   > ul > li > a:hover {

@@ -12,6 +12,7 @@ function Banner() {
 export default Banner;
 
 const BannerContainer = styled.div`
+  position: relative;
   background-image: url("https://statics.olx.com.pk/external/base/img/hero_bg_pk.jpg");
   height: 252px;
   background-repeat: no-repeat;
@@ -22,5 +23,5 @@ const BannerContainer = styled.div`
   left: 0;
   right: 0;
   z-index: 1;
-  margin-top:8px;
+  margin-top: 8px;
 `;
