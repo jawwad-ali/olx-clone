@@ -29,9 +29,9 @@ function Header() {
         </SearchIconDiv>
 
         <HeaderRight>
-          <button>Login</button>
-          <button>
-            <AddIcon /> Sell
+          <button className="login_btn">Login</button>
+          <button className="sell_btn">
+            <AddIcon /> <span>Sell</span>
           </button>
         </HeaderRight>
       </HeaderContainer>
@@ -43,12 +43,12 @@ export default Header;
 
 const HeaderContainer = styled.div`
   display: flex;
-  position: fixed;
+  position: relative;
   align-items: center;
   width: 100%;
-  position: relative;
   padding: 10px 0;
   background-color: rgba(0, 47, 52, 0.03);
+  z-index: 10;
 
   > img {
     height: 50px;
@@ -123,12 +123,11 @@ const HeaderCenter = styled.div`
 
 const SearchIconDiv = styled.div`
   min-width: 48px;
-  height: 48px;
+  height: 51px;
   display: flex;
   cursor: pointer;
   background-color: #002f34;
   border-radius: 1px;
-  height: 50px;
 
   > .MuiSvgIcon-root {
     min-width: 52px;
@@ -143,7 +142,7 @@ const HeaderRight = styled.div`
   justify-content: space-around;
   margin-left: 20px;
 
-  > button {
+  > .login_btn {
     align-items: center;
     border: none;
     font-size: 16px;
@@ -152,9 +151,11 @@ const HeaderRight = styled.div`
     font-weight: bold;
     border-bottom: 2px solid #002f34;
     font-family: "Roboto", sans-serif;
+    height: 30px;
+    margin-top: 10px;
   }
 
-  > button:nth-child(2) {
+  > .sell_btn {
     display: flex;
     border: 5px solid transparent;
     border-radius: 999px;
@@ -167,5 +168,9 @@ const HeaderRight = styled.div`
     color: black;
     margin-left: -30px;
     font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
+  > .sell_btn > span {
+    padding-top: 2px;
   }
 `;

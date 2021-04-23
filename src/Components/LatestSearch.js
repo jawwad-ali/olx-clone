@@ -10,7 +10,7 @@ function LatestSearch() {
           <h2>Based on your latest Search</h2>
           <a href="#">View more</a>
         </Heading>
-        <Xyz>
+        <ProductContainer>
           <SearchCard
             image="https://apollo-singapore.akamaized.net/v1/files/wwx9mceyce9l1-PK/image;s=300x600;q=60"
             price="Rs 620"
@@ -34,7 +34,7 @@ function LatestSearch() {
             price="Rs 12,500,000 "
             desc="4 Beds"
           />
-        </Xyz>
+        </ProductContainer>
       </LatestSearchContainer>
     </>
   );
@@ -44,18 +44,18 @@ export default LatestSearch;
 
 const LatestSearchContainer = styled.div`
   position: relative;
-  top: 350px;
-  background-color: rgba(0, 47, 52, 0.03);
+  top: 340px;
+  background-color: rgba(0, 47, 52, 0.1);
   margin-right: 50px;
   margin-left: 50px;
-  margin-bottom: 50px;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
 `;
 
-const Xyz = styled.div`
+const ProductContainer = styled.div`
   display: flex;
   justify-content: space-around;
-  margin-left: -50px;
 `;
 
 const Heading = styled.div`
@@ -65,7 +65,7 @@ const Heading = styled.div`
   margin-right: 10px;
 
   > h2 {
-    font-size: 22px;
+    font-size: 24px;
     color: #002f34;
     font-weight: 500;
     font-family: "Roboto", sans-serif;

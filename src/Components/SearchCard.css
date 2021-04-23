@@ -1,10 +1,9 @@
 .card-container {
   display: flex;
-  width: 20%;
+  margin-top: 10px;
 }
 .card {
   margin-top: 20px;
-  margin-bottom: 70px;
   width: 270px;
   background-color: white;
   margin-left: 15px;
@@ -19,7 +18,7 @@
 }
 
 .top-div span {
-  background-color: yellow;
+  background-color: #ffce32;
   height: 25px;
   color: #002f34;
 }
